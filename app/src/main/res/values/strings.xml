@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NFCPayment</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_generate_bill">GenerateBillActivity</string>
+    <string name="title_activity_recieve_payment">RecievePayment</string>
+    <string name="title_activity_history">History</string>
+    <string name="title_activity_customer">CustomerActivity</string>
+    <string name="title_activity_view_bill">ViewBill</string>
+</resources>
