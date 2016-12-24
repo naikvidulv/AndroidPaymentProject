@@ -12,7 +12,7 @@
     <ImageButton
         android:layout_width="fill_parent"
         android:layout_height="200sp"
-        android:id="@+id/bal"
+        android:id="@+id/balImageButton"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:src="@android:drawable/arrow_up_float" />
@@ -20,25 +20,29 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Recieve payment"
-        android:id="@+id/button"
+        android:text="Receive payment"
+        android:id="@+id/receivePaymentButton"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="receivePayment" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Add Product"
-        android:id="@+id/button2"
-        android:layout_above="@+id/button"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/addProductButton"
+        android:layout_above="@+id/receivePaymentButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="addProduct"
+        android:layout_marginTop="10sp" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Transaction History"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/transactionHistoryButton"
+        android:layout_below="@+id/receivePaymentButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="transactionHistory" />
 
 </RelativeLayout>

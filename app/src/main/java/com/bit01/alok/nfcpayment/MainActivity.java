@@ -1,12 +1,34 @@
 package com.bit01.alok.nfcpayment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
+
+    public void addProduct (View view) {
+
+        Intent intent = new Intent (getApplicationContext(), ViewBill.class);
+        startActivity(intent);
+    }
+
+    public void receivePayment (View view) {
+
+        Intent intent = new Intent (getApplicationContext(), ReceivePayment.class);
+        startActivity(intent);
+    }
+
+    public void transactionHistory (View view) {
+
+        Intent intent = new Intent (getApplicationContext(), History.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +37,10 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        
+        Button addProductButton = (Button)findViewById(R.id.addProductButton);
+        Button receivePaymentButton = (Button)findViewById(R.id.receivePaymentButton);
+        Button transactionHistoryButton = (Button)findViewById(R.id.transactionHistoryButton);
+
     }
 
     @Override
